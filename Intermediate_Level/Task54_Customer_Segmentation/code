@@ -1,0 +1,13 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
+customers = ['A','B','C','D','E','F']
+spending = [200,500,150,800,300,900]
+
+plt.figure(figsize=(6,4))
+plt.bar(customers, spending)
+plt.title("Customer Spending Pattern")
+plt.xlabel("Customers")
+plt.ylabel("Amount Spent")
+plt.savefig("output.png")
+plt.show()
